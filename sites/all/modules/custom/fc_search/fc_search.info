@@ -1,0 +1,8 @@
+name = Fresh Charities Search
+description = Provides search customizations for Fresh Charities site
+dependencies[] = apachesolr
+dependencies[] = apachesolr_user
+package = Fresh Charities
+core = 7.x
+php = 5.2
+files[] = fc_search.module

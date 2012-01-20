@@ -1,0 +1,34 @@
+name = "FC - Classic"
+description = "This is the classic theme for Fresh Charities"
+version = 2.0
+core = 7.x
+engine = phptemplate
+
+; JS
+scripts[] = js/jquery.tooltips.js
+scripts[] = js/init.js
+
+; CSS
+stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/extras.css
+stylesheets[all][] = fonts/fonts.css
+stylesheets[all][] = css/tabs.css
+stylesheets[all][] = css/forms.css
+stylesheets[all][] = css/style.css
+
+; REGIONS
+regions[page_top] = Page top
+regions[header] = Header
+regions[highlight] = Highlight
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[footer_left] = Footer Left
+regions[footer_middle] = Footer Middle
+regions[footer_right] = Footer Right
+regions[footer_bottom] = Footer Bottom
+regions[page_bottom] = Page bottom
+
+; PANEL LAYOUTS
+plugins[panels][layouts] = layouts

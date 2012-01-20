@@ -1,0 +1,133 @@
+/* 
+
+COLORS 
+	Green:				#5A9B9D
+	Dark Green :		#354141
+	Med Green:			#394A4A
+	Darker Green:		#2a3131
+	Dark Red:			#783d3d
+	Light Red:			#ec7d7d
+	Light Green:		#AFD5D6
+	Other Green:		#497274
+	Date					#4f7879
+	
+FONTS
+	font-family: 'Cantarell', arial, sans-serif;
+	font-family: 'BebasNeueRegular';	
+
+STANDARDS
+	text btn: 		font-size: 10px; text-transform: uppercase; font-weight: bold;		
+	
+*/
+
+/* GENERAL STYLES
+-------------------------------------------------------------- */
+form{}
+label{font-size: 16px; color: #fff; font-weight: bold; height: 20px; line-height: 20px; float: left; width: 180px; text-align: right; margin-right: 10px; padding: 0;}
+
+input[type='text'], 
+input[type='password'], 
+textarea{padding: 0 5px; line-height: 30px; height: 30px; color: #AFD5D6; border: #5A9B9D solid 3px; background: #415858; font-size: 14px; width: 344px;}
+
+input[type='text']:focus,
+input[type='password']:focus, 
+input[type='file']:focus, 
+textarea:focus{background: #fff; color: #354141}
+
+.form-item, .form-actions, .form-item .form-item{margin: 0; padding: 0;}
+.form-required{color: #5A9B9D;}
+.form-item{margin-bottom: 10px;}
+
+
+/* SUBMIT BTN */
+input[type='submit']{font-family: 'BebasNeueRegular';	font-size: 24px; height: 36px; line-height: 36px; background: #fff; padding: 0 10px; color: #354141; text-transform: uppercase; border: none;}
+input[type='submit']:hover{background: #5A9B9D; color: #fff;}
+
+.image-widget input[type='submit']{font-size: 18px; height: 20px; line-height: 20px; margin-left: 10px;}
+.field-type-image .description{display: none;}
+
+/* FILE FIELD */
+input[type='file']{padding: 0 5px; line-height: 30px; height: 30px; color: #AFD5D6; border: #5A9B9D solid 3px; background: #415858; font-size: 14px;}
+
+
+/* TEXT FIELD */
+.description{padding: 5px; font-weight: bold; width: 350px; background: #394A4A; padding: 5px; margin-left: 190px;}
+.input.password-confirm, input.password-field{margin-bottom: 10px;}
+
+.form-type-textarea{padding: 15px;}
+.form-type-textarea label{text-align: left;}
+.form-type-textarea textarea{clear: both; height: 200px;}
+
+/* CHECK BOXES */
+.form-checkboxes{padding-left: 190px;}
+.form-type-checkbox{ margin-right: 10px;  color: #5A9B9D;  text-align: left;}
+label.option{float: none;  color: #5A9B9D; font-size: 12px; font-weight: bold;}
+
+
+
+
+#user-register-form{width: 565px;}
+
+
+/* LOCATION FORM STYLES
+-------------------------------------------------------------- */
+.location .form-item label{width: 180px; margin-right: 10px; padding: 0; text-align: right;}
+.location .form-item input{width: 344px;}
+
+/* DATE FORM STYLES
+-------------------------------------------------------------- */
+.container-inline-date > .form-item{border: none;}
+.container-inline-date .date-padding{float: none; padding: 0;}
+.container-inline-date{clear: none; width: auto;}
+
+/* CAPTCHA FORM STYLES
+-------------------------------------------------------------- */
+.form-item-captcha-response{}
+.form-item-captcha-response input{width: 280px;}
+.form-item-captcha-response .description{width: 286px; margin-left: 254px;}
+.form-item-captcha-response .field-prefix{width: 60px; display: inline-block;}
+
+/* USERNAME FORM STYLES
+-------------------------------------------------------------- */
+.field-suffix{display: none;}
+#username-check-message{padding: 5px; background: #783d3d; color: #ec7d7d; font-weight: bold; font-size: 12px; margin-left: 190px; width: 350px; margin-top: -5px; }
+#username-check-message em{color: #fff;}
+
+
+fieldset{ background:#2a3131; margin-bottom: 30px; padding-bottom: 5px;}
+.fieldset-description{padding: 5px; background: #394A4A; margin-bottom: 10px; margin-top: -10px;}
+fieldset fieldset{ background:#2a3131; border: none; margin-bottom: 0;}
+fieldset fieldset .legend{font-size: 16px; color: #fff; font-weight: bold; height: 20px; line-height: 20px; float: left; width: 180px; text-align: right; margin-right: 10px; padding: 0; text-transform: capitalize; background: none;}
+fieldset fieldset label{width: auto; float: left; color: #AFD5D6;}
+
+.legend{ height: 20px; line-height: 20px; font-size: 18px; text-transform: uppercase; color: #354141; font-weight: bold; background: #5A9B9D; padding-left: 10px; margin-bottom: 10px; }
+
+html.js fieldset.collapsible, 
+fieldset{}
+
+html.js fieldset.collapsible legend span{}
+html.js fieldset.collapsible legend a span,
+html.js fieldset.collapsible legend span
+{
+  
+}
+
+html.js fieldset.collapsible legend a span{}
+html.js fieldset.collapsed legend a span{}
+html.js fieldset.collapsed legend span{}
+html.js fieldset.collapsed{}
+html.js fieldset.collapsed legend a span:hover,
+html.js fieldset.collapsible legend a span:hover{}
+
+html.js fieldset.collapsible .fieldset-wrapper {}
+html.js input.form-autocomplete{}
+html.js input.throbbing{}
+
+.vertical-tabs,
+.vertical-tabs-panes fieldset{}
+
+
+
+
+
+

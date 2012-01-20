@@ -1,0 +1,14 @@
+
+name = "Username available AJAX check"
+description = "Check username originality on registration or create user form via AJAX request."
+core = 7.x
+package = Registration
+dependencies[] = user
+
+
+; Information added by drupal.org packaging script on 2011-02-25
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "username_check"
+datestamp = "1298620572"
+

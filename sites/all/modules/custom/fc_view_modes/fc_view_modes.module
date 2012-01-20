@@ -1,0 +1,11 @@
+<?php
+/**
+* Implements hook_entity_info_alter().
+*/
+
+function fc_view_modes_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['fc_archive'] = array(
+    'label' => t('Archive'),
+    'custom settings' => TRUE,
+  );
+} 

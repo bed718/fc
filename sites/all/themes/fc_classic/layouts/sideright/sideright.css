@@ -1,0 +1,15 @@
+
+.sideright { 
+/*  overflow: hidden;  */
+}
+
+.sideright .main-content{
+	width: 565px;
+	float: left;
+	margin-right: 20px;
+}
+
+.sideright .side-content{
+	width: 370px;
+	float: left;
+}

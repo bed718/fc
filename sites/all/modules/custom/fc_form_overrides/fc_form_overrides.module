@@ -1,0 +1,38 @@
+<?php
+/**
+* Implements hook_entity_info_alter().
+*/
+
+function fc_form_overrides_theme($existing, $type, $theme, $path){
+  return array(
+    'user_register' => array(
+      'render element' => 'form',
+      'template' => 'templates/user-register',
+    ),
+  );
+}
+
+
+function fc_form_overrides_form_alter(&$form, $form_state, $form_id){
+	unset($form['account']['mail']['#description']);
+	unset($form['account']['pass']['#description']);
+	$form['account']['mail']['#title'] = t('Email');
+	$form['account']['name']['#title'] = t('Custom URL');
+}
+
+function fc_form_overrides_form_profile2_form_alter(&$form, &$form_state) {
+	if($form['profile_user']){
+	
+		
+		
+	}elseif($form['profile_charity']){
+	
+		
+	}
+}
+
+function fc_form_overrides_form_user_register_form_alter(&$form, $form_state){
+	$form['#theme'] = 'user_register';
+}
+
+

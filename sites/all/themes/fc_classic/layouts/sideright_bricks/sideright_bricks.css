@@ -1,0 +1,20 @@
+
+.sideright-bricks { 
+/*  overflow: hidden;  */
+}
+
+.sideright-bricks .full-content{
+	width: 100%;
+	clear: both;
+}
+
+.sideright-bricks .main-content{
+	width: 565px;
+	float: left;
+	margin-right: 20px;
+}
+
+.sideright-bricks .side-content{
+	width: 370px;
+	float: left;
+}

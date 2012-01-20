@@ -1,0 +1,129 @@
+
+/*
+ * Tabs CSS
+ *
+ * Adds styles for the primary and secondary tabs.
+ *
+ * Compare this with default CSS found in the system module's stylesheet (a copy
+ * of which is in drupal5-reference.css, line 510.)
+ *
+ */
+
+
+div.tabs {
+  border: none;
+  background: none;
+  text-align: right;
+  margin-top: -20px;
+  margin-bottom: 0;
+  float: right;
+}
+
+ul.primary , ul.secondary{
+	border: none;
+  background: none;
+}
+
+ul.primary {
+	font-size: 10px; text-transform: uppercase;
+	font-family: 'CantarellBold', arial, serif;
+	border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+ul.primary li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+   background: #394A4A none;
+  padding: 3px 5px;
+  margin-left: 5px;
+}
+
+ul.primary li a {
+  display: block;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.primary li a .tab {
+  display: block;
+  border: none;
+  background: none;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+ul.primary li a:hover {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.primary li a:hover .tab {
+border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.primary li.active a,
+ul.primary li.active a:hover {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+ul.primary li.active a .tab,
+ul.primary li.active a:hover .tab {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.secondary {
+  border: none;
+  background: none;
+}
+
+ul.secondary li {
+  border: none;
+  background: none;
+}
+
+ul.secondary a {
+  border: none;
+  background: none;
+}
+
+ul.secondary a .tab {
+ border: none;
+  background: none;
+}
+
+ul.secondary a:hover {
+  border: none;
+  background: none;
+}
+
+ul.secondary a.active,
+ul.secondary a.active:hover {
+  border: none;
+  background: none;
+}

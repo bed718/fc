@@ -1,0 +1,4 @@
+name = Custom View Modes
+description = Adds custom view modes.
+core = 7.x
+package = Custom Modules

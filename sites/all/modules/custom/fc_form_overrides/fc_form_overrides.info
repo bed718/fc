@@ -1,0 +1,4 @@
+name = Custom Form Overrides
+description = Custom form tweaks.
+core = 7.x
+package = Custom Modules

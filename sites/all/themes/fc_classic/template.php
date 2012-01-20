@@ -31,8 +31,9 @@ function fc_classic_preprocess_page(&$vars){
 function fc_classic_preprocess_node(&$vars){
 
 	$node = $vars['node'];
-	//kpr($vars);
-	
+	//if($node['type'] == 'event'){
+	//kpr($node);
+	//}
 	if($vars['view_mode'] == 'fc_archive'){
 	//kpr($vars);
 		//$vars['theme_hook_suggestions'][] = 'node__archive';

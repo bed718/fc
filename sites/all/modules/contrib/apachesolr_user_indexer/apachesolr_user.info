@@ -1,0 +1,12 @@
+name = Apache Solr Indexer for Users
+description = Indexer for reading user entity types into a solr core.
+dependencies[] = apachesolr
+package = Search Toolkit
+core = 7.x
+
+; Information added by drupal.org packaging script on 2012-01-13
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "apachesolr_user_indexer"
+datestamp = "1326413330"
+

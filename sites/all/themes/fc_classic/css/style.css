@@ -380,10 +380,10 @@ _____________________________________________________________________________
 	.filters li a:hover, .filters li.active a{color: #fff;}
 	.filters li a:hover span, .filters li.active a span{background: #fff;}
 
-#filter-focus{height: 52px;}
-	#filter-focus .people{position: absolute; top: 0; left: 0;}
-	#filter-focus .enviro{position: absolute; top: 0; left: 50%; margin-left: -26px;}
-	#filter-focus .animal{position: absolute; top: 0; right: 0;}
+.main-focus{height: 52px;}
+	.main-focus .people{position: absolute; top: 0; left: 0;}
+	.main-focus .enviro{position: absolute; top: 0; left: 50%; margin-left: -26px;}
+	.main-focus .animal{position: absolute; top: 0; right: 0;}
 
 #filter-by{text-align: center; padding: 10px 0;}
 

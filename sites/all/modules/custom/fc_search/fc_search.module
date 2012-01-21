@@ -20,11 +20,25 @@ function fc_search_apachesolr_index_documents_alter(array &$documents, $entity, 
   if ($entity_type == 'user') {
    // $documents[0]->addField('ss_craigtest', 'CRAIG TEST VALUE'. $entity->field_user_description['und'][0]['value']);
    
+   $profile = profile2_load_by_user($entity->uid);
+   
+   if($profile['charity']){
+   	$documents[0]->addField('ss_profile_type', 'charity');
+   	$documents[0]->addField('ss_profile_name', $profile['charity']->field_charity_name['und'][0]['value']);
+   	$documents[0]->addField('locs_coordinates', floatval($profile['charity']->field_charity_location['und'][0]['latitude']) . ',' . floatval($profile['charity']->field_charity_location['und'][0]['longitude']));
+   }elseif($profile['user']){
+   	$documents[0]->addField('ss_profile_type', 'user');
+   	$documents[0]->addField('ss_profile_name', $profile['user']->field_user_name['und'][0]['value']);
+   	$documents[0]->addField('ss_user_zip', $profile['user']->field_uesr_zip['und'][0]['postal_code']);
+   	$documents[0]->addField('locs_coordinates', floatval($profile['user']->field_uesr_zip['und'][0]['latitude']) . ',' . floatval($profile['user']->field_uesr_zip['und'][0]['longitude']));
+   }
+   
   }
   elseif ($entity_type == 'node') {
     switch ($entity->type) {
-      case 'node-type-1':
-
+      case 'event':
+			//$documents[0]->addField('is_event_latitude', $entity->field_event_location['und'][0]['latitude']);
+			//$documents[0]->addField('is_event_longitude', $entity->field_event_location['und'][0]['longitude']);
       break;
       case 'node-type-2':
       break;

@@ -47,21 +47,34 @@
 	
 <div id="container">
 	<?php if ($messages): ?>
-    <div id="messages"><div class="section clearfix">
-      <?php print $messages; ?>
-    </div></div> <!-- /.section, /#messages -->
-  <?php endif; ?>	
+	 <div id="messages"><div class="section clearfix">
+	   <?php print $messages; ?>
+	 </div></div> <!-- /.section, /#messages -->
+	<?php endif; ?>	
 	<?php if ($tabs): ?>
-        <div class="tabs">
-          <?php print render($tabs); ?>
-        </div>
-      <?php endif; ?>
-  <?php if ($title123): ?>
-    <div class="section-header">
-      <h2><?php print $title; ?></h2>
-    </div> <!-- /.section, /#messages -->
-  <?php endif; ?>
-	<?php print render($page['content']); ?>
+	     <div class="tabs">
+	       <?php print render($tabs); ?>
+	     </div>
+	   <?php endif; ?>
+	<?php if ($title123): ?>
+	 <div class="section-header">
+	   <h2><?php print $title; ?></h2>
+	 </div> <!-- /.section, /#messages -->
+	<?php endif; ?>
+  
+	<?php if ($page['sidebar_first']): ?>
+		<div class="sideleft">
+			<div class="side-content">
+				<?php print render($page['sidebar_first']); ?>
+			</div>
+			<div class="main-content">
+				<?php print render($page['content']); ?>
+			</div>
+		</div>
+	<?php else: ?>
+		<?php print render($page['content']); ?>
+	<?php endif; ?>
+	
 </div>
 
 <div id="footer" class="clearfix">

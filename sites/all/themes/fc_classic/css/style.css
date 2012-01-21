@@ -98,7 +98,14 @@ ul, li, .item-list ul{margin: 0; padding: 0;}
 	
 	#user-nav ul ul{ position: absolute; top: 20px; left: 0; display: none;}
 		#user-nav ul ul li{float: none; display: block; width: 130px; border-top: #415858 solid 2px;}
-	
+
+
+/* SIDEBAR
+-------------------------------------------------------------- */
+.sideleft {}
+.sideleft .main-content{width: 760px; float: left; margin-left: 20px; }
+.sideleft .side-content{width: 175px; float: left;}
+
 				
 /* SEARCH
 -------------------------------------------------------------- */

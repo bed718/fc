@@ -367,6 +367,10 @@ _____________________________________________________________________________
 .donation-block .close-btn a{height: 25px; width: 25px; font-size: 14px; line-height: 25px}
 
 
+.user-header{}
+	.user-header h1{height: 45px;}
+
+
 /* TEASER GRID STYLES ---------------------- */
 .grid .teaser{margin: 0 20px 20px 0;}
 
@@ -407,6 +411,9 @@ _____________________________________________________________________________
 .next-btn{right: -15px;}
 .last-btn{left: -15px;}
 
+.event-follow-btn{}
+.default-btn a{font-family: 'BebasNeueRegular';	font-size: 24px; height: 36px; line-height: 36px; background: #fff; padding: 0 10px; color: #354141; text-transform: uppercase; border: none;}
+.default-btn a:hover{background: #5A9B9D; color: #fff;}
 	
 /* TABLE STYLES
 -------------------------------------------------------------- */

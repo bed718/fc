@@ -29,6 +29,13 @@
 			<?php endif; ?>
 		
 		</ul>
+		<div class="event-follow-btn default-btn">
+		<?php if(user_is_logged_in()): ?>
+			<?php print flag_create_link('follow_event', $fields['nid']->content); ?>
+		<?php else: ?>
+			<a href="#" class="show-login">Login to follow</a>
+		<?php endif; ?>
+		</div>
 	</div>
 	
 	

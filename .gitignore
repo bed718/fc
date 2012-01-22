@@ -9,7 +9,7 @@ sites/*/files
 sites/*/private
 
 #don't add Eclipse project folders-Craig
-#.buildpath
-#.project
-#.settings
-#dummy.php
+.buildpath
+.project
+.settings
+dummy.php

@@ -19,9 +19,9 @@ function fc_search_apachesolr_index_documents_alter(array &$documents, $entity, 
   // Add fields to users
   if ($entity_type == 'user') {
    // $documents[0]->addField('ss_craigtest', 'CRAIG TEST VALUE'. $entity->field_user_description['und'][0]['value']);
-   
+
    $profile = profile2_load_by_user($entity->uid);
-   
+
    if($profile['charity']){
    	$documents[0]->addField('ss_profile_type', 'charity');
    	$documents[0]->addField('ss_profile_name', $profile['charity']->field_charity_name['und'][0]['value']);
@@ -32,7 +32,7 @@ function fc_search_apachesolr_index_documents_alter(array &$documents, $entity, 
    	$documents[0]->addField('ss_user_zip', $profile['user']->field_uesr_zip['und'][0]['postal_code']);
    	$documents[0]->addField('locs_coordinates', floatval($profile['user']->field_uesr_zip['und'][0]['latitude']) . ',' . floatval($profile['user']->field_uesr_zip['und'][0]['longitude']));
    }
-   
+
   }
   elseif ($entity_type == 'node') {
     switch ($entity->type) {
@@ -121,5 +121,31 @@ function fc_classic_facetapi_link_inactive($variables) {
 
   // correctly use the current page's path
   $variables['path'] = $_GET['q'];
-  return theme_link($variables);
+  return '<span>+</span> '. theme_link($variables);
+}
+
+/**
+ * Returns HTML for the deactivation widget.
+ *
+ * @param $variables
+ *   An associative array containing:
+ *   - text: The text of the facet link.
+ *
+ * @ingroup themable
+ */
+function fc_classic_facetapi_deactivate_widget($variables) {
+  return '<span>-</span>';
+}
+
+/**
+ * Returns HTML for the inactive facet item's count.
+ *
+ * @param $variables
+ *   An associative array containing:
+ *   - count: The item's facet count.
+ *
+ * @ingroup themeable
+ */
+function fc_classic_facetapi_count($variables) {
+  return '<span class=\'filter-count\'>' . (int) $variables['count'] . '<span>';
 }
